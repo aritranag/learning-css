@@ -1,0 +1,73 @@
+.header{
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.801),
+    rgba(40, 180, 131, 0.801)),
+    url(../../../assets/natours/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  //clipping a part of the image
+  // for more clip-paths https://bennettfeely.com/clippy/
+  clip-path: polygon(0 0, 100% 0%,100% 75vh,0 100%);
+}
+
+.logo-box{
+  position:absolute;
+  top : 5vh;
+  left : 5vh;
+}
+
+.logo{
+  height: 35px;
+}
+
+.central-header-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.heading-primary{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 4vmax;
+  font-weight: 400;
+  letter-spacing: 2.5vmax;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 2vmax;
+  font-weight: 700;
+  letter-spacing: 0.85vmax;
+}
+
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  80%{
+    transform: translateX(2%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
