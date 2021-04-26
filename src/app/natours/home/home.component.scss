@@ -107,6 +107,18 @@
   }
 }
 
+@keyframes moveInBottom {
+  0%{
+    opacity: 0;
+    transform: translateY(3vmax);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .btn:link,
 .btn:visited
 {
@@ -116,11 +128,30 @@
   padding : 1vmax 2.5vmax;
   border-radius: 5vmax;
   transition: all .3s;
+  position: relative;
+}
+
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5vmax;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
 }
 
 .btn:hover{
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.btn:hover::after{
+  transform: scale(1.5);
+  opacity: 0;
 }
 
 .btn:active{
@@ -132,6 +163,15 @@
 .btn-white{
   background-color: white;
   color:#777;
+}
+
+.btn-white::after{
+  background-color: #fff;
+}
+
+.btn-animated{
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; //IMPORTANT, applies the 0% style intially before the animation, will make element invisible if opacity is set to 0
 }
 
 
