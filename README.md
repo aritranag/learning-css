@@ -1,27 +1,12 @@
 # LearningCss
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+This project is a follow along project for udemy course [Advanced CSS and SASS](https://www.udemy.com/course/advanced-css-and-sass/).
+Once the course is completed, it will also contain various experiments that I will try and learn.
+Feel free to use any code snippets found here. A mention would be appreciated.
 
-## Development server
+## Technology
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Angular - v11
 
-## Code scaffolding
+To run - use `ng serve`. Will create an auto-reload web server at `http://localhost:4200/`. Standard stuff.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
